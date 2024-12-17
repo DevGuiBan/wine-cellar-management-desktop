@@ -139,6 +139,7 @@ public class ListarFornecedores extends javax.swing.JFrame {
         jPanel8.add(jTextField1);
         jPanel8.add(filler1);
 
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/criar.png"))); // NOI18N
         jButton7.setText("Cadastrar Fornecedor");
         jButton7.setPreferredSize(new java.awt.Dimension(160, 30));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -148,6 +149,7 @@ public class ListarFornecedores extends javax.swing.JFrame {
         });
         jPanel8.add(jButton7);
 
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/filter (1).png"))); // NOI18N
         jButton6.setText("Filtrar");
         jButton6.setPreferredSize(new java.awt.Dimension(80, 30));
         jPanel8.add(jButton6);
