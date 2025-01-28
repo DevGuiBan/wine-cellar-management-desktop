@@ -219,12 +219,59 @@ public class CadastrarProduto extends javax.swing.JFrame {
         jButton7.setForeground(new java.awt.Color(0, 28, 128));
         jButton7.setText("Visualizar Tipos de Produtos");
         jButton7.setBorder(null);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+        jButton7.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                abrirModalTiposProdutos(frame);
             }
         });
 
+        frame.add(jButton7);
+        frame.setVisible(true);
+
+        private static void abrirModalTiposProdutos(JFrame parent) {
+        JDialog modal = new JDialog(parent, "Tipos de Produtos", true);
+        modal.setSize(300, 250);
+        modal.setLayout(new BorderLayout());
+
+        // Painel do título e botão fechar
+        JPanel topPanel = new JPanel(new BorderLayout());
+        JLabel titleLabel = new JLabel("Tipos de Produtos", SwingConstants.CENTER);
+        JButton closeButton = new JButton("X");
+        closeButton.setBorder(null);
+        closeButton.addActionListener(e -> modal.dispose());
+        
+        topPanel.add(titleLabel, BorderLayout.CENTER);
+        topPanel.add(closeButton, BorderLayout.EAST);
+        
+        // Lista de produtos
+        DefaultListModel<String> model = new DefaultListModel<>();
+        model.addElement("Espumante");
+        model.addElement("Refrigerante");
+        model.addElement("Vinho Branco");
+        model.addElement("Vinho Rosé");
+        model.addElement("Vinho Tinto");
+        JList<String> list = new JList<>(model);
+        JScrollPane scrollPane = new JScrollPane(list);
+
+        // Botão "Novo"
+        JButton novoButton = new JButton("Novo");
+        novoButton.setBackground(new Color(34, 177, 76)); // Verde
+        novoButton.setForeground(Color.WHITE);
+        novoButton.setFont(new Font("Segoe UI", Font.BOLD, 14));
+
+        // Painel de fundo
+        JPanel bottomPanel = new JPanel();
+        bottomPanel.add(novoButton);
+
+        // Adicionando componentes ao modal
+        modal.add(topPanel, BorderLayout.NORTH);
+        modal.add(scrollPane, BorderLayout.CENTER);
+        modal.add(bottomPanel, BorderLayout.SOUTH);
+
+        modal.setLocationRelativeTo(parent);
+        modal.setVisible(true);
+    }
+           
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
