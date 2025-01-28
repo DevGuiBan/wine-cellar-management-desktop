@@ -8,12 +8,12 @@ package Interfaces;
  *
  * @author rafaj
  */
-public class CadastrarProduto extends javax.swing.JFrame {
+public class EditarCliente extends javax.swing.JFrame {
 
     /**
      * Creates new form CadastrarProduto
      */
-    public CadastrarProduto() {
+    public EditarCliente() {
         initComponents();
     }
 
@@ -42,26 +42,23 @@ public class CadastrarProduto extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextField4 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
+        jTextField5 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jSpinner2 = new javax.swing.JSpinner();
+        jTextField3 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        jTextField6 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(243, 243, 223));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setMaximumSize(new java.awt.Dimension(1366, 770));
         setMinimumSize(new java.awt.Dimension(1366, 770));
-        setPreferredSize(new java.awt.Dimension(1366, 770));
 
         jPanel1.setBackground(new java.awt.Color(243, 243, 223));
 
@@ -83,7 +80,7 @@ public class CadastrarProduto extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(128, 0, 32));
         jButton1.setFont(new java.awt.Font("Cormorant Garamond SemiBold", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(225, 235, 43));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/wine.png"))); // NOI18N
         jButton1.setText("Produtos");
         jButton1.setBorder(null);
@@ -128,7 +125,7 @@ public class CadastrarProduto extends javax.swing.JFrame {
 
         jButton6.setBackground(new java.awt.Color(128, 0, 32));
         jButton6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setForeground(new java.awt.Color(225, 235, 43));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/images/clientes.png"))); // NOI18N
         jButton6.setText("Clientes");
         jButton6.setBorder(null);
@@ -143,7 +140,7 @@ public class CadastrarProduto extends javax.swing.JFrame {
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, null, java.awt.Color.darkGray));
 
         jLabel2.setFont(new java.awt.Font("Cormorant Garamond SemiBold", 0, 30)); // NOI18N
-        jLabel2.setText("Cadastrar Produto");
+        jLabel2.setText("Editar Clientes");
 
         jSeparator1.setBackground(new java.awt.Color(128, 0, 32));
         jSeparator1.setForeground(new java.awt.Color(128, 0, 32));
@@ -165,41 +162,43 @@ public class CadastrarProduto extends javax.swing.JFrame {
         jPanel6.add(jTextField1);
 
         jLabel4.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
-        jLabel4.setText("Fornecedor:");
+        jLabel4.setText("CPF:");
         jPanel6.add(jLabel4);
 
-        jComboBox1.setBackground(new java.awt.Color(217, 217, 217));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel6.add(jComboBox1);
+        jTextField4.setBackground(new java.awt.Color(217, 217, 217));
+        jPanel6.add(jTextField4);
 
         jLabel5.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
-        jLabel5.setText("Preço de Venda:");
+        jLabel5.setText("Endereço:");
         jPanel6.add(jLabel5);
-        jPanel6.add(jSpinner1);
+
+        jTextField5.setBackground(new java.awt.Color(217, 217, 217));
+        jPanel6.add(jTextField5);
 
         jPanel7.setBackground(new java.awt.Color(204, 153, 0));
         jPanel7.setOpaque(false);
         jPanel7.setLayout(new java.awt.GridLayout(6, 2, 0, 5));
 
         jLabel6.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
-        jLabel6.setText("Descrição:");
+        jLabel6.setText("Telefone:");
         jPanel7.add(jLabel6);
 
         jTextField2.setBackground(new java.awt.Color(217, 217, 217));
         jPanel7.add(jTextField2);
 
         jLabel7.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
-        jLabel7.setText("Quantidade:");
+        jLabel7.setText("Email:");
         jPanel7.add(jLabel7);
-        jPanel7.add(jSpinner2);
+
+        jTextField3.setBackground(new java.awt.Color(217, 217, 217));
+        jPanel7.add(jTextField3);
 
         jLabel8.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
-        jLabel8.setText("Tipo:");
+        jLabel8.setText("Data de Nascimento:");
         jPanel7.add(jLabel8);
 
-        jComboBox3.setBackground(new java.awt.Color(217, 217, 217));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel7.add(jComboBox3);
+        jTextField6.setBackground(new java.awt.Color(217, 217, 217));
+        jPanel7.add(jTextField6);
 
         jButton4.setBackground(new java.awt.Color(225, 225, 200));
         jButton4.setFont(new java.awt.Font("Cormorant Garamond SemiBold", 0, 18)); // NOI18N
@@ -208,20 +207,10 @@ public class CadastrarProduto extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(0, 128, 17));
         jButton5.setFont(new java.awt.Font("Cormorant Garamond SemiBold", 0, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Cadastrar");
+        jButton5.setText("Editar");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
-            }
-        });
-
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(0, 28, 128));
-        jButton7.setText("Visualizar Tipos de Produtos");
-        jButton7.setBorder(null);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
             }
         });
 
@@ -231,26 +220,24 @@ public class CadastrarProduto extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(512, 512, 512)
+                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(jPanel5Layout.createSequentialGroup()
+                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(26, 26, 26)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addGap(40, 40, 40)
-                                .addComponent(jLabel2))
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(117, 117, 117)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26)
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(117, 117, 117)
                                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(50, 50, 50)
-                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 519, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(512, 512, 512)
+                                .addComponent(jLabel2))))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(454, 454, 454)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(96, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -264,12 +251,11 @@ public class CadastrarProduto extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30))
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(32, 32, 32))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -301,7 +287,7 @@ public class CadastrarProduto extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 53, Short.MAX_VALUE))))
+                        .addGap(0, 52, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -340,10 +326,6 @@ public class CadastrarProduto extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -361,20 +343,27 @@ public class CadastrarProduto extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastrarProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastrarProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastrarProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastrarProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditarCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastrarProduto().setVisible(true);
+                new EditarCliente().setVisible(true);
             }
         });
     }
@@ -386,9 +375,6 @@ public class CadastrarProduto extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -405,9 +391,11 @@ public class CadastrarProduto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }

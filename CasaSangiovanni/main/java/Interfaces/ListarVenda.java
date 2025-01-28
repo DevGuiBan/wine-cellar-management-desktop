@@ -177,13 +177,13 @@ public class ListarVenda extends javax.swing.JFrame {
         jTable2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Código", "Produto", "Cliente", "Data", "Quantidade", "Valor Unitário", "Total", "Ações"
+                "Código", "Produto", "Cliente", "Data", "Método de Pagamento", "Total", "Ações"
             }
         ));
         jScrollPane2.setViewportView(jTable2);

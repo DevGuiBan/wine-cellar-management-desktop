@@ -33,6 +33,7 @@ public class CadastrarFornecedor extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -121,6 +122,14 @@ public class CadastrarFornecedor extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton3);
+
+        jButton6.setBackground(new java.awt.Color(128, 0, 32));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/images/clientes.png"))); // NOI18N
+        jButton6.setText("Clientes");
+        jButton6.setBorder(null);
+        jPanel3.add(jButton6);
 
         jPanel4.setBackground(new java.awt.Color(243, 243, 223));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -348,6 +357,7 @@ public class CadastrarFornecedor extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -33,6 +33,7 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -43,6 +44,8 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
         jPanel7 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jComboBox3 = new javax.swing.JComboBox<>();
         jButton4 = new javax.swing.JButton();
@@ -121,6 +124,14 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
         });
         jPanel3.add(jButton3);
 
+        jButton10.setBackground(new java.awt.Color(128, 0, 32));
+        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaces/images/images/clientes.png"))); // NOI18N
+        jButton10.setText("Clientes");
+        jButton10.setBorder(null);
+        jPanel3.add(jButton10);
+
         jPanel4.setBackground(new java.awt.Color(243, 243, 223));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -158,6 +169,14 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(204, 153, 0));
         jPanel7.setOpaque(false);
         jPanel7.setLayout(new java.awt.GridLayout(6, 2, 0, 5));
+
+        jLabel4.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
+        jLabel4.setText("Data de Nascimento:");
+        jPanel7.add(jLabel4);
+
+        jTextField1.setBackground(new java.awt.Color(217, 217, 217));
+        jTextField1.setText("Data de Nascimento");
+        jPanel7.add(jTextField1);
 
         jLabel7.setFont(new java.awt.Font("Cormorant Garamond", 1, 18)); // NOI18N
         jLabel7.setText("Forma de Pagamento:");
@@ -363,6 +382,7 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
@@ -377,6 +397,7 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
@@ -388,5 +409,6 @@ public class RegistrarVendaCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

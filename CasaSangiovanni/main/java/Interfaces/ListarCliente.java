@@ -188,7 +188,7 @@ public class ListarCliente extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Código", "Produto", "Cliente", "Data", "Quantidade", "Valor Unitário", "Total", "Ações"
+                "Código", "Nome", "Endereço", "CPF", "Data de Nascimento", "Telefone", "Email", "Ações"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
